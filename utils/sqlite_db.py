@@ -3,7 +3,7 @@ import sqlite3 as sq
 
 def sql_start():
     global conn
-    conn = sq.connect('/app/database/users.db')
+    conn = sq.connect('database/users.db')
     if conn:
         print('Data base connected')
     conn.execute(
